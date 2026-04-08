@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 20px 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 0 40px 0;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.left-column,
+.right-column {
+  width: 50%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}
+
+.party-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.party-item {
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.party-item:hover {
+  background-color: #f7f7f7;
+}
+
+.party-item.selected {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.right-column h3 {
+  font-size: 1.2rem;
+  margin: 0 0 14px 0;
+  font-weight: bold;
+}
+
+.date {
+  margin: 0 0 2px 0;
+  font-size: 1rem;
+}
+
+.location {
+  margin: 0 0 18px 0;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.description {
+  margin: 0 0 18px 0;
+  font-size: 1rem;
+  line-height: 1.3;
+  max-width: 500px;
+}
+
+.guest-list {
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+}
